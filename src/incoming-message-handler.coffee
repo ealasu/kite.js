@@ -1,6 +1,7 @@
 parse = require 'try-json-parse'
 
 handleAuth = require './auth/auth.coffee'
+KiteError = require './error.coffee'
 
 mungeCallbacks = (callbacks, n) ->
   # FIXME: this is an ugly hack; there must be a better way to implement it:
